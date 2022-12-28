@@ -16,16 +16,18 @@
           src="/icons/sun.svg"
           data-current-icon
         />
-        <div class="header-current-temp"><span data-current-temp></span>°C</div>
+        <div class="header-current-temp">
+          <span data-current-temp></span>&deg;
+        </div>
       </div>
       <div class="header-right">
         <div class="info-group">
           <div class="label">Máxima</div>
-          <div><span data-current-high></span>°C</div>
+          <div><span data-current-high></span>&deg;</div>
         </div>
         <div class="info-group">
           <div class="label">S.Térm. Máx</div>
-          <div><span data-current-fl-high></span>°C</div>
+          <div><span data-current-fl-high></span>&deg;</div>
         </div>
         <div class="info-group">
           <div class="label">Vento</div>
@@ -36,11 +38,11 @@
         </div>
         <div class="info-group">
           <div class="label">Mínima</div>
-          <div><span data-current-low></span>°C</div>
+          <div><span data-current-low></span>&deg;</div>
         </div>
         <div class="info-group">
           <div class="label">S.Térm. Mín</div>
-          <div><span data-current-fl-low></span>°C</div>
+          <div><span data-current-fl-low></span>&deg;</div>
         </div>
         <div class="info-group">
           <div class="label">Precipitação</div>
@@ -104,7 +106,7 @@
       <div class="day-card">
         <img data-icon class="weather-icon" />
         <div class="day-card-day" data-date></div>
-        <div><span data-temp></span><span>°C</span></div>
+        <div><span data-temp></span><span>&deg;</span></div>
       </div>
     </template>
 
@@ -113,7 +115,10 @@
         <td>
           <div class="info-group">
             <div class="label" data-day></div>
-            <div><span data-time></span><span> Hrs</span></div>
+            <div>
+              <span class="data-time" data-time></span
+              ><span class="data-time-sufix"> Hrs</span>
+            </div>
           </div>
         </td>
         <td>
@@ -122,7 +127,7 @@
         <td>
           <div class="info-group">
             <div class="label">Temperatura</div>
-            <div><span data-temp></span><span>°C</span></div>
+            <div><span data-temp></span><span>&deg;</span></div>
           </div>
         </td>
         <td>

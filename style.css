@@ -118,3 +118,27 @@ body {
 .hour-row > td {
   padding: 0.25rem 0.5rem;
 }
+
+@media (max-width: 500px) {
+  .geo-info {
+    font-size: 0.7rem;
+  }
+
+  .weather-icon.large {
+    width: 60px;
+    height: 60px;
+  }
+
+  .header-current-temp {
+    font-size: 1.8rem;
+  }
+
+  .label {
+    font-size: 0.5rem;
+  }
+
+  .data-time,
+  .data-time-sufix {
+    font-size: 0.8rem;
+  }
+}
